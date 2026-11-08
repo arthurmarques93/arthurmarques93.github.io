@@ -1,0 +1,13 @@
+:root { --bg: #0B0907; --card: #1A1511; --gold: #D6A256; --gold-light: #F2CF85; --text: #F5EFE6; --muted: #A89A88; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at top, #3a2a14 0%, var(--bg) 55%); background-color: var(--bg);
+  color: var(--text); font-family: -apple-system, "SF Pro Display", system-ui, sans-serif; display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+main { width: 100%; max-width: 420px; text-align: center; }
+img.logo { width: 200px; max-width: 60%; margin-bottom: 8px; }
+.card { background: var(--card); border: 1px solid rgba(214,162,86,.25); border-radius: 20px; padding: 24px 20px; margin-top: 16px; }
+h1 { font-size: 26px; letter-spacing: 1px; margin: 0 0 8px; text-transform: uppercase; }
+p { color: var(--muted); font-size: 15px; line-height: 1.45; margin: 8px 0; }
+.code { font-size: 40px; font-weight: 900; letter-spacing: 6px; color: var(--gold-light); margin: 12px 0; }
+a.button { display: block; background: linear-gradient(180deg, var(--gold-light), var(--gold)); color: #1a1209; font-weight: 800;
+  text-decoration: none; padding: 16px; border-radius: 999px; font-size: 17px; letter-spacing: 1px; text-transform: uppercase; margin-top: 16px; }
+small { display: block; color: var(--muted); font-size: 12px; margin-top: 24px; }

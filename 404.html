@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4th to Glory · Challenge</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+  <img class="logo" src="/logo.png" alt="4th to Glory">
+  <div class="card" id="invite" hidden>
+    <h1>You've been challenged</h1>
+    <p>A friend wants to play you in 4th to Glory. Same dice, same rules: draft your team and beat theirs.</p>
+    <div class="code" id="code"></div>
+    <a class="button" id="open" href="#">Open in 4th to Glory</a>
+    <p>No app yet? It's coming soon to the App Store. Once installed, use this code in Friends → Join with a code.</p>
+  </div>
+  <div class="card" id="missing" hidden>
+    <h1>Page not found</h1>
+    <p><a href="/" style="color: var(--gold)">Go to 4th to Glory</a></p>
+  </div>
+  <small>Not affiliated with any professional football league or team.</small>
+</main>
+<script>
+  // Invite links look like /join/ABC123. With the app installed iOS opens it directly (Universal Link);
+  // otherwise GitHub Pages serves this page and the button tries the app's own scheme.
+  var m = location.pathname.match(/^\/join\/([A-Za-z0-9]{6})\/?$/);
+  if (m) {
+    var code = m[1].toUpperCase();
+    document.getElementById("code").textContent = code;
+    document.getElementById("open").href = "fourthtoglory://join/" + code;
+    document.getElementById("invite").hidden = false;
+  } else {
+    document.getElementById("missing").hidden = false;
+  }
+</script>
+</body>
+</html>
