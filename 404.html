@@ -24,7 +24,12 @@
 <script>
   // Invite links look like /join/ABC123. With the app installed iOS opens it directly (Universal Link);
   // otherwise GitHub Pages serves this page and the button tries the app's own scheme.
-  var m = location.pathname.match(/^\/join\/([A-Za-z0-9]{6})\/?$/);
+  var m = location.pathname.match(/^\/(join|league)\/([A-Za-z0-9]{6})\/?$/);
+  if (m && m[1] === "league") {
+    document.querySelector("#invite h1").textContent = "Join my league";
+    document.querySelector("#invite p").textContent = "Draft your own team and play one season against your friends in 4th to Glory.";
+  }
+  if (m) { m = [m[0], m[2]]; }
   if (m) {
     var code = m[1].toUpperCase();
     document.getElementById("code").textContent = code;

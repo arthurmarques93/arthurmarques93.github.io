@@ -3,7 +3,10 @@
     "details": [
       {
         "appIDs": ["XXT2XJVDAC.com.4thtoglory.app"],
-        "components": [{ "/": "/join/*", "comment": "Friend challenge invites" }]
+        "components": [
+          { "/": "/join/*", "comment": "Friend challenge invites" },
+          { "/": "/league/*", "comment": "Friends league invites" }
+        ]
       }
     ]
   }
