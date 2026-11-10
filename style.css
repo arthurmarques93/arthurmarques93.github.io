@@ -11,3 +11,13 @@ p { color: var(--muted); font-size: 15px; line-height: 1.45; margin: 8px 0; }
 a.button { display: block; background: linear-gradient(180deg, var(--gold-light), var(--gold)); color: #1a1209; font-weight: 800;
   text-decoration: none; padding: 16px; border-radius: 999px; font-size: 17px; letter-spacing: 1px; text-transform: uppercase; margin-top: 16px; }
 small { display: block; color: var(--muted); font-size: 12px; margin-top: 24px; }
+/* Long text pages (privacy, support, account deletion) */
+body.doc { align-items: flex-start; }
+body.doc main { max-width: 720px; text-align: left; }
+body.doc img.logo { width: 120px; display: block; margin: 0 auto 8px; }
+body.doc h1 { text-align: center; }
+h2 { font-size: 17px; color: var(--gold-light); margin: 22px 0 6px; letter-spacing: .5px; }
+body.doc p, body.doc li { color: #d8cdbd; font-size: 15px; line-height: 1.55; }
+body.doc ul { padding-left: 20px; margin: 6px 0; }
+a { color: var(--gold-light); }
+nav.lang { text-align: center; margin: 4px 0 8px; font-size: 14px; }
