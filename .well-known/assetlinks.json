@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.fourthtoglory.app",
+      "sha256_cert_fingerprints": [
+        "18:F1:2E:0F:55:3A:DA:37:2E:FB:F7:8E:38:D3:47:8E:77:29:AC:78:9E:EC:0A:A4:B7:DB:E4:10:54:2C:59:68"
+      ]
+    }
+  }
+]
